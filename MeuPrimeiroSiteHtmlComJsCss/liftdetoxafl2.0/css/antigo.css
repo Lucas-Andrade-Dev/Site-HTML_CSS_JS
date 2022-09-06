@@ -1,0 +1,87 @@
+body,
+html {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.cabecalho{
+    background-color:  #6ee307d0;
+    height: 50px;
+    text-align: center;
+  
+}
+
+
+.revender{
+  
+  background-color: rgba(2, 179, 2, 0.61);
+  text-align: center;
+  
+ 
+  
+  
+}
+
+.revender:hover {
+  background-color: rgba(0, 0, 0, 0.644);
+}
+
+.revender a{
+  color: aliceblue;
+  font-size: medium;
+  text-align: center;
+  font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-style:oblique;
+ 
+  
+  
+}
+
+.cross {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.cross::before,
+.cross::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.cross::before {
+  border-bottom: 2px solid red;
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
+
+.cross::after {
+  border-bottom: 2px solid red;
+  -webkit-transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .boxBariatrica {
+    background-color: #E8E8E8;
+    padding: 0 4%
+  }
+  .imgCartao{height: 15%;}
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+  .boxBariatrica {
+    background-image: url('img/girl2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #E8E8E8;
+    margin-left: -25%;
+  }
+}

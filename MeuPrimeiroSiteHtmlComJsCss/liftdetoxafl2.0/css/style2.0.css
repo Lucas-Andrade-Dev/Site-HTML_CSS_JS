@@ -1,0 +1,109 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+.cabecalho{
+    width: 100%;
+	height: 100%;
+	min-height: 250px;
+	background-image: url(../img/fundoHeader.png);
+	background-size: cover;
+    background-position: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+    z-index: 9; 
+
+}
+
+#header {
+    position: fixed;
+    transition: 0.3s ease;
+}
+
+#header.scrollHide {
+    border-radius: 50%;
+    transition: 0.3s ease;
+    opacity: 0;
+   
+}
+
+#menu-bar.scrollHide{
+    display: none;
+}
+
+#seta.scrollHide{
+    display:none;
+}
+
+footer {
+	min-height: 50px;
+	background-color: rgb(13, 58, 2);
+	text-align: center;
+	color: #ddd;
+}
+
+
+
+.imagem-seta{
+ 
+    height: 30px;
+    width: 30px;
+    transform: translateY(-200px);
+    margin-left: -80px;
+    opacity: 50%;
+    position: relative;
+    cursor: pointer;
+
+    animation-name: setaBaixo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes setaBaixo {
+    0%{
+        top: 0px;
+    }
+
+    100%{
+        top: 20px;
+    }
+    
+}
+
+.chamada{
+    padding: 80px 10px;
+    font-family: 'Neue Machina',sans-serif;
+}
+
+.chamada p{
+    margin-bottom: 1px;
+}
+
+.chamada__titulo{
+    color: rgb(8, 85, 26);
+    margin-bottom: 1px;
+}
+
+.chamada__titulo--destaque{
+    color: whitesmoke;
+    margin-bottom: 1px;
+}
+
+#descricao{
+    text-align: left;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.chamada h1{
+    margin-bottom: 10px ;
+}
+
